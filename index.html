@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Permission Module</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Welcome to the corporate world!
+
+    <div class="container">
+        <h2>Permission Module</h2>
+
+        <!-- Role Selection -->
+        <label>Select Role</label>
+        <select id="roleSelect">
+            <option value="">-- Select Role --</option>
+            <option value="admin">Admin</option>
+            <option value="editor">Editor</option>
+            <option value="viewer">Viewer</option>
+        </select>
+
+        <!-- Permissions List -->
+        <h3>Permissions</h3>
+
+        <div class="permissions">
+            <label>
+                <input type="checkbox" id="selectAll"> Select All
+            </label>
+
+            <label>
+                <input type="checkbox" class="permission" value="read"> Read
+            </label>
+            <label>
+                <input type="checkbox" class="permission" value="write"> Write
+            </label>
+            <label>
+                <input type="checkbox" class="permission" value="delete"> Delete
+            </label>
+            <label>
+                <input type="checkbox" class="permission" value="update"> Update
+            </label>
+        </div>
+
+        <button id="saveBtn">Save Permissions</button>
+
+        <p id="output"></p>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
